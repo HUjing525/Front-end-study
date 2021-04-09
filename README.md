@@ -1,24 +1,9 @@
-# front-end
+# Front-end Study Notes
 
-## Project setup
-```
-npm install
-```
+## 项目描述
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+本项目介绍了计算机网络、HTML、CSS、JavaScript、数据结构和Vue框架的基础知识和个人理解。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 项目地址
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+预览请点击 [https://hujing525.github.io/Front-end-study/](https://hujing525.github.io/Front-end-study/).
