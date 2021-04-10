@@ -1,99 +1,107 @@
 <template>
-<el-container class="container">
-  <!-- 头区域 -->
-  <el-header>
-    <img src="../assets/study.png" alt="">
-    <span>前端学习笔记</span>
-  </el-header>
-  <el-container>
-    <!-- 侧边栏 -->
-    <el-aside :width="isCollapse ? '64px' : '200px'">
-      <div class="toggle-button" @click="toggleCollapse">|||</div>
-      <!-- 侧边栏菜单区域 -->
-      <el-menu
-      text-color="#333"
-      active-text-color="red"
-      :unique-opened="true"
-      collapse-transition="false"
-      :collapse="isCollapse"
-      :router="true">
+<div>
+  <el-container class="container">
+    <!-- 头区域 -->
+    <el-header>
+      <img src="../assets/study.png" alt="">
+      <span>前端学习笔记</span>
+    </el-header>
+    <el-container>
+      <!-- 侧边栏 -->
+      <el-aside :width="isCollapse ? '64px' : '200px'">
+        <div class="toggle-button" @click="toggleCollapse">|||</div>
+        <!-- 侧边栏菜单区域 -->
+        <el-menu
+        text-color="#333"
+        active-text-color="red"
+        :unique-opened="true"
+        collapse-transition="false"
+        :collapse="isCollapse"
+        :router="true">
 
-        <!-- 一级菜单 -->
-        <el-submenu :index="'1'">
-          <template #title>
-            <i class="el-icon-pear"></i>
-            <span>计算机网络</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="1-1">应用层</el-menu-item>
-          <el-menu-item index="1-2">传输层</el-menu-item>
-          <el-menu-item index="1-3">网络层</el-menu-item>
-          <el-menu-item index="1-4">数据链路层</el-menu-item>
-          <el-menu-item index="1-5">物理层</el-menu-item>
-        </el-submenu>
+          <!-- 一级菜单 -->
+          <el-submenu :index="'1'">
+            <template #title>
+              <i class="el-icon-pear"></i>
+              <span>计算机网络</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="1-1">应用层</el-menu-item>
+            <el-menu-item index="1-2">传输层</el-menu-item>
+            <el-menu-item index="1-3">网络层</el-menu-item>
+            <el-menu-item index="1-4">数据链路层</el-menu-item>
+            <el-menu-item index="1-5">物理层</el-menu-item>
+          </el-submenu>
 
-        <!-- 一级菜单 -->
-        <el-submenu :index="'2'">
-          <template #title>
-            <i class="el-icon-grape"></i>
-            <span>HTML</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="2-1">简介</el-menu-item>
-        </el-submenu>
+          <!-- 一级菜单 -->
+          <el-submenu :index="'2'">
+            <template #title>
+              <i class="el-icon-grape"></i>
+              <span>HTML</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="2-1">介绍</el-menu-item>
+            <el-menu-item index="2-2">总结</el-menu-item>
+          </el-submenu>
 
-        <!-- 一级菜单 -->
-        <el-submenu index="3">
-          <template #title>
-            <i class="el-icon-orange"></i>
-            <span>CSS</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="3-1">简介</el-menu-item>
-        </el-submenu>
+          <!-- 一级菜单 -->
+          <el-submenu index="3">
+            <template #title>
+              <i class="el-icon-orange"></i>
+              <span>CSS</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="3-1">介绍</el-menu-item>
+            <el-menu-item index="3-2">总结</el-menu-item>
+          </el-submenu>
 
-        <!-- 一级菜单 -->
-        <el-submenu index="4">
-          <template #title>
-            <i class="el-icon-cherry"></i>
-            <span>JavaScript</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="4-1">简介</el-menu-item>
-        </el-submenu>
+          <!-- 一级菜单 -->
+          <el-submenu index="4">
+            <template #title>
+              <i class="el-icon-cherry"></i>
+              <span>JavaScript</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="4-1">介绍</el-menu-item>
+            <el-menu-item index="4-2">总结</el-menu-item>
+          </el-submenu>
 
-        <!-- 一级菜单 -->
-        <el-submenu index="5">
-          <template #title>
-            <i class="el-icon-apple"></i>
-            <span>数据结构</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="5-1">简介</el-menu-item>
-        </el-submenu>
+          <!-- 一级菜单 -->
+          <el-submenu index="5">
+            <template #title>
+              <i class="el-icon-apple"></i>
+              <span>数据结构</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="5-1">数组</el-menu-item>
+            <el-menu-item index="5-1">栈、队列</el-menu-item>
+            <el-menu-item index="5-1">链表</el-menu-item>
+            <el-menu-item index="5-1">集合、字典</el-menu-item>
+          </el-submenu>
 
-        <!-- 一级菜单 -->
-        <el-submenu index="6">
-          <template #title>
-            <i class="el-icon-watermelon"></i>
-            <span>Vue</span>
-          </template>
-          <!-- 二级菜单 -->
-          <el-menu-item index="6-1">简介</el-menu-item>
-        </el-submenu>
-    </el-menu>
-    </el-aside>
-    <!-- 主体 -->
-    <el-main>
-      <router-view></router-view>
-    </el-main>
-  </el-container>
-</el-container>     
+          <!-- 一级菜单 -->
+          <el-submenu index="6">
+            <template #title>
+              <i class="el-icon-watermelon"></i>
+              <span>Vue</span>
+            </template>
+            <!-- 二级菜单 -->
+            <el-menu-item index="6-1">介绍</el-menu-item>
+          </el-submenu>
+      </el-menu>
+      </el-aside>
+      <!-- 主体 -->
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+    </el-container>
+  </el-container> 
+</div>   
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'home',
   props: {
     
   },
@@ -160,6 +168,7 @@ export default {
   letter-spacing: 0.2em;
   cursor: pointer; 
 }
+
 
 
 
