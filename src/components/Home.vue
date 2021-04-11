@@ -40,8 +40,7 @@
               <span>HTML</span>
             </template>
             <!-- 二级菜单 -->
-            <el-menu-item index="2-1">介绍</el-menu-item>
-            <el-menu-item index="2-2">总结</el-menu-item>
+            <el-menu-item index="2-1">总结</el-menu-item>
           </el-submenu>
 
           <!-- 一级菜单 -->
@@ -51,8 +50,7 @@
               <span>CSS</span>
             </template>
             <!-- 二级菜单 -->
-            <el-menu-item index="3-1">介绍</el-menu-item>
-            <el-menu-item index="3-2">总结</el-menu-item>
+            <el-menu-item index="3-1">总结</el-menu-item>
           </el-submenu>
 
           <!-- 一级菜单 -->
@@ -62,8 +60,7 @@
               <span>JavaScript</span>
             </template>
             <!-- 二级菜单 -->
-            <el-menu-item index="4-1">介绍</el-menu-item>
-            <el-menu-item index="4-2">总结</el-menu-item>
+            <el-menu-item index="4-1">总结</el-menu-item>
           </el-submenu>
 
           <!-- 一级菜单 -->
@@ -73,20 +70,7 @@
               <span>数据结构</span>
             </template>
             <!-- 二级菜单 -->
-            <el-menu-item index="5-1">数组</el-menu-item>
-            <el-menu-item index="5-1">栈、队列</el-menu-item>
-            <el-menu-item index="5-1">链表</el-menu-item>
-            <el-menu-item index="5-1">集合、字典</el-menu-item>
-          </el-submenu>
-
-          <!-- 一级菜单 -->
-          <el-submenu index="6">
-            <template #title>
-              <i class="el-icon-watermelon"></i>
-              <span>Vue</span>
-            </template>
-            <!-- 二级菜单 -->
-            <el-menu-item index="6-1">介绍</el-menu-item>
+            <el-menu-item index="5-1">总结</el-menu-item>
           </el-submenu>
       </el-menu>
       </el-aside>
